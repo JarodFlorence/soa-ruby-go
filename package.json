@@ -1,0 +1,21 @@
+{
+    "name": "my-react-app",
+    "version": "1.0.0",
+    "description": "A React/Node.js application",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run start\" \"npm run client\"",
+        "install-client": "npm install --prefix client"
+    },
+    "author": "Jarod Florence",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "cors": "^2.8.5"
+    },
+    "devDependencies": {
+        "concurrently": "^6.2.0"
+    }
+}
